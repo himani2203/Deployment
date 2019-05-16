@@ -12,7 +12,7 @@ spec:
       labels: 
         app: java 
     spec: 
-      containers: 
+     containers: 
       - name: java 
         image: imageacr.azurecr.io/himani2203/maven_project:#{Build.BuildId}#
         ports: 
