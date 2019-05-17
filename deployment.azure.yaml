@@ -14,7 +14,7 @@ spec:
     spec: 
      containers: 
       - name: java 
-        image: imageacr.azurecr.io/himani2203/maven_project:#{Build.BuildId}#
+        image: imageacr.azurecr.io/himani2203/maven_project:#{Release.Artifacts.{alias}.BuildId}#
         ports: 
         - containerPort: 8080
 #      imagePullSecrets:
@@ -50,7 +50,7 @@ spec:
     spec: 
       containers: 
       - name: java 
-        image: imageacr.azurecr.io/himani2203/java-hello-world-with-maven:#{Build.BuildId}#
+        image: imageacr.azurecr.io/himani2203/java-hello-world-with-maven:#{Release.Artifacts.{alias}.BuildId}#
         ports: 
         - containerPort: 8081
 #      imagePullSecrets:
